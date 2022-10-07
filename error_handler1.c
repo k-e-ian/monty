@@ -18,7 +18,7 @@ int pop_error(unsigned int line_number)
  */
 int pint_error(unsigned int line_number)
 {
-	fprintf(stderr, "L%d: empty stack, cant pint!\n", line_number);
+	fprintf(stderr, "L%d: can't pint, stack empty\n", line_number);
 	return (EXIT_FAILURE);
 }
 
