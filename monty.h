@@ -45,6 +45,18 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/* string tokenizing functions */
+
+char **strtow(char *str, char *deli);
+
+int is_delim(char ch, char *deli);
+
+int word_length(char *str, char *deli);
+
+int word_count(char *str, char *deli);
+
+char *next_word(char *str, char *deli);
+
 /*stack_functions*/
 
 void free_stack(stack_t **stack);
