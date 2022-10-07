@@ -32,7 +32,7 @@ void _pall(stack_t **stack, unsigned int line_number)
  */
 void _pint(stack_t **stack, unsigned int line_number)
 {
-	if ((*stack)->next == NULL && stack == NULL)
+	if (stack == NULL)
 	{
 		op_error(pint_error(line_number));
 		return;
