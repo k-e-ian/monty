@@ -14,7 +14,9 @@ void _swap(stack_t **stack, unsigned int line_number);
 void _pall(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp = (*stack)->next;
-
+	
+	if (stack == NULL)
+		return;
 	while (temp)
 	{
 		printf("%d\n", temp->n);
@@ -73,6 +75,9 @@ void _swap(stack_t **stack, unsigned int line_number)
 		op_error(short_stack_error(line_number, "swap"));
 		return;
 	}
+
+	if (stack == NULL)
+		return;
 
 	temp = (*stack)->next->next;
 	(*stack)->next->next = temp->next;
