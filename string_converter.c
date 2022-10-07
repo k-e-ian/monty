@@ -25,7 +25,7 @@ char *get_int(int num)
 		length++;
 
 	ret = malloc(length + 1);
-	
+
 	if (!ret)
 		return (NULL);
 
@@ -49,9 +49,9 @@ unsigned int _abs(int i)
 }
 
 /**
- * get_numbase_len - gets length of buffer 
+ * get_numbase_len - gets length of buffer
  * @num: number to get length needed for
- * @base: base of number 
+ * @base: base of number
  * Return: integer containing length of buffer needed
  */
 int get_numbase_len(unsigned int num, unsigned int base)

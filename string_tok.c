@@ -15,12 +15,12 @@ char **strtow(char *str, char *deli)
 	if (str == NULL || !*str)
 		return (NULL);
 	wc = word_count(str, deli);
-	
+
 	if (wc == 0)
 		return (NULL);
-	
+
 	tok = malloc((wc + 1) * sizeof(char *));
-	
+
 	if (tok == NULL)
 		return (NULL);
 	while (i < wc)
