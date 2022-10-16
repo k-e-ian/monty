@@ -44,7 +44,7 @@ void monty_pchar(stack_t **stack, unsigned int line_number)
 void monty_pstr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp = (*stack)->next;
-	
+
 	if (stack == NULL)
 		return;
 
