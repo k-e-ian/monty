@@ -43,9 +43,10 @@ void monty_pchar(stack_t **stack, unsigned int line_number)
  */
 void monty_pstr(stack_t **stack, unsigned int line_number)
 {
+	stack_t *temp = (*stack)->next;
+	
 	if (stack == NULL)
 		return;
-	stack_t *temp = (*stack)->next;
 
 	while (temp && temp->n != 0 && (temp->n > 0 && temp->n <= 127))
 	{
