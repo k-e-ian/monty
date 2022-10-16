@@ -3,7 +3,7 @@
 
 /**
  * run_monty - function to execute
- * fd: pointer to file
+ * @fd: pointer to file
  * Return: EXIT_SUCCESS on success, EXITFAILURE on failure.
  */
 int run_monty(FILE *fd)
