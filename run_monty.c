@@ -3,7 +3,7 @@
 
 /**
  * run_monty - function to execute
- * fd: File descriptor
+ * fd: pointer to file
  * Return: EXIT_SUCCESS on success, EXITFAILURE on failure.
  */
 int run_monty(FILE *fd)
@@ -55,13 +55,11 @@ int run_monty(FILE *fd)
 		free_tokens();
 	}
 	free_stack(&stack);
-
 	if (line && *line == 0)
 	{
 		free(line);
 		return (malloc_error());
 	}
-
 	free(line);
 	return (exit_status);
 }

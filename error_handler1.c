@@ -29,7 +29,7 @@ int pint_error(unsigned int line_number)
  */
 int f_open_error(char *filename)
 {
-	fprintf(stderr, "error: Cant open file %s\n", filename);
+	fprintf(stderr, "Error: Can't open file %s\n", filename);
 	return (EXIT_FAILURE);
 }
 
@@ -41,7 +41,7 @@ int f_open_error(char *filename)
  */
 int unknown_op_error(char *opcode, unsigned int line_number)
 {
-	fprintf(stderr, "L%u:unknown command %s\n", line_number, opcode);
+	fprintf(stderr, "L%u:unknown instruction %s\n", line_number, opcode);
 	return (EXIT_FAILURE);
 }
 
