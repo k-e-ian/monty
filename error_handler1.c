@@ -29,7 +29,7 @@ int pint_error(unsigned int line_number)
  */
 int f_open_error(char *filename)
 {
-	fprintf(stderr, "error: cant open file %s, failed\n", filename);
+	fprintf(stderr, "error: Cant open file %s\n", filename);
 	return (EXIT_FAILURE);
 }
 

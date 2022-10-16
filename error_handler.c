@@ -40,7 +40,7 @@ int pchar_error(unsigned int line_number, char *message)
  */
 int usage_error(void)
 {
-	fprintf(stderr, "usage: monty file\n");
+	fprintf(stderr, "USAGE: monty file\n");
 	return (EXIT_FAILURE);
 }
 
